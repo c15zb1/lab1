@@ -1,4 +1,4 @@
-(* 
+(*
 			      CS51 Lab 1
 		     Basic Functional Programming
 			     Spring 2017
@@ -42,7 +42,7 @@ exercise2 is a function that returns 42 (instead of failing). When you
 submit, the Exercise 2 unit test should then pass.
 ......................................................................*)
 
-let exercise2 () = failwith "exercise2 not implemented" ;;
+let exercise2 () = 42 ;;
 
 (* Note that your grade on labs is not dependent on your passing the
 unit tests. You'll see that even when a unit test is marked as passed,
@@ -99,7 +99,7 @@ appropriate OCaml expression to assign the value to the variable
 exercise1 below.
 ......................................................................*)
 
-let exercise3 () = failwith "exercise3 not implemented" ;;
+let exercise3 () = 3 - 5 ;;
 
 (* Hint: The OCaml concrete expression
 
@@ -111,9 +111,14 @@ does *not* correspond to the abstract syntax above.
 Exercise 4: Draw the tree that the concrete syntax "- 5 - 3" does
 correspond to. Check it with a member of the course staff if you'd
 like.
+ +
+/ \
+- -
+| |
+5 3
 ......................................................................*)
 
-   
+
 (*======================================================================
 Part 2: Types and type inference
 
@@ -182,7 +187,7 @@ list. (What's a sensible return value for the empty list?)
 
 let sum (lst : int list) : int =
   failwith "sum not implemented" ;;
-  
+
 (*......................................................................
 Exercise 8: Define a recursive function that returns the maximum
 element in a non-empty integer list. On the empty list, the function
@@ -286,7 +291,7 @@ list:
 
     let double : int list -> int list =
       map (( * ) 2) ;;
-    
+
 END IMPORTANT NOTES
 
 ........................................................................
@@ -303,7 +308,7 @@ Exercise 12: Reimplement prods using map.
 
 let prods_ho (lst : (int * int) list) : int list =
   failwith "prods_ho not implemented" ;;
-  
+
 (*......................................................................
 Exercise 13: The OCaml List module provides, in addition to the map,
 fold_left, and fold_right higher-order functions, several other useful
@@ -321,6 +326,6 @@ Exercise 14: Define a function evens, using these higher-order
 functional programming techniques, that returns a list of all of the
 even numbers in its argument list.
 ......................................................................*)
-   
+
 let evens : int list -> int list =
   fun _ -> failwith "evens not implemented" ;;
